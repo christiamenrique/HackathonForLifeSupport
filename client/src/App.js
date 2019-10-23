@@ -9,6 +9,8 @@ import CreateExercise from "./components/create-exercise.component";
 // import CreateUser from "./components/create-user.component";
 import CreateStudent from "./components/create-students.component";
 import StudentsList from "./components/student-card.componet";
+import CreateEmployee from "./components/create-employee.component";
+import EmployeesList from './components/employee-card.component';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       {/* <Route path="/user" component={CreateUser} /> */}
       <Route path="/student" component={CreateStudent}/>
       <Route path="/view-student" component={StudentsList}/>
+      <Route path="/employee" component={CreateEmployee}/>
+      <Route path="/view-employee" component={EmployeesList}/>
       </div>
     </Router>
   );

@@ -1,16 +1,19 @@
-// assigning exe
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import axios from 'axios';
+import "../style/student_card.scss";
 
 const Student = props => (
-  <tr>
-    <td>{props.student.name}</td>
-    <td>{props.student.teamName}</td>
-    <td>{props.student.description}</td>
-    <td>{props.student.win}</td>
-    <td>{props.student.loss}</td>
-  </tr>
+      <div className="grid-item">
+    <div className="img-cont">
+      <img alt="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_CuqQpYzDRQXJ_-4NoVbedjKioYl-7CTvYzeSDIkGRGVObVfKw&s" />
+      </div>
+    <p>Name:{props.student.name}</p>
+    <p>Team Name: {props.student.teamName}</p>
+    <p>Description: {props.student.description}</p>
+    <p>Win: {props.student.win}</p>
+    <p>Loss: {props.student.loss}</p>
+    </div>
 )
 
 export default class ExercisesList extends Component {
@@ -38,26 +41,14 @@ export default class ExercisesList extends Component {
 
   render() {
     return (
-        <React.Fragment>
-        <h3>Logged Exercises</h3>
-        <table className="table">
-          <thead className="thead-light">
-            <tr>
-              <th>Name</th>
-              <th>Team Name</th>
-              <th>Description</th>
-              <th>Win</th>
-              <th>Loss</th>
-            </tr>
-          </thead>
-          <tbody>
-            { this.exerciseList() }
-          </tbody>
-        </table>
-        </React.Fragment>
+      <div className="grid-container">
+        { this.exerciseList() }
+      </div>
     )
   }
 }
+
+// assigning exe
 // get students info from db
 // get exercises and relate to student 
 // list exercises 

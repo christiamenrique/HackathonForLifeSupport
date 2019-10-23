@@ -100,7 +100,7 @@ export default class CreateStudent extends Component {
         axios.post('/students/add', students)
             .then(res => console.log(res.data));
 
-        window.location = '/view-student';
+        // window.location = '/';
     }
 
     render() {

@@ -1,0 +1,30 @@
+.img-cont {
+    height: 50%;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    height: 30em;
+    width: 400px;
+    box-shadow: 0 0 45px 0 rgba(0,0,0,.15); 
+    text-align: center;
+    cursor: pointer;
+    margin-top: 2.7rem;
+  }
+  
+  .grid-item {
+    padding: 20px;
+    font-size: 17px;
+  }
+
+  
+  .grid-item p {
+    padding-bottom: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+  }
