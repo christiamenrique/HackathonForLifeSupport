@@ -7,28 +7,28 @@ export default class CreateExercise extends Component {
   constructor(props) {
     super(props);
 
-    this.onChangeUsername = this.onChangeUsername.bind(this);
+    this.onChangeName = this.onChangeName.bind(this);
     this.onChangeDescription = this.onChangeDescription.bind(this);
     this.onChangeDuration = this.onChangeDuration.bind(this);
     this.onChangeDate = this.onChangeDate.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
-      username: '',
+      name: '',
       description: '',
       duration: 0,
       date: new Date(),
-      users: []
+      students: []
     }
   }
 
   componentDidMount() {
-    axios.get('/users/')
+    axios.get('/students/')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
-            users: response.data.map(user => user.username),
-            username: response.data[0].username
+            students: response.data.map(student => student.name),
+            name: response.data[0].name
           })
         }
       })
@@ -38,9 +38,9 @@ export default class CreateExercise extends Component {
 
   }
 
-  onChangeUsername(e) {
+  onChangeName(e) {
     this.setState({
-      username: e.target.value
+      name: e.target.value
     })
   }
 
@@ -66,7 +66,7 @@ export default class CreateExercise extends Component {
     e.preventDefault();
 
     const exercise = {
-      username: this.state.username,
+      name: this.state.name,
       description: this.state.description,
       duration: this.state.duration,
       date: this.state.date
@@ -86,17 +86,17 @@ export default class CreateExercise extends Component {
       <h3>Create New Exercise Log</h3>
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
-          <label>Username: </label>
-          <select ref="userInput"
+          <label>Students name: </label>
+          <select 
               required
               className="form-control"
-              value={this.state.username}
-              onChange={this.onChangeUsername}>
+              value={this.state.name}
+              onChange={this.onChangeName}>
               {
-                this.state.users.map(function(user) {
+                this.state.students.map(function(student) {
                   return <option 
-                    key={user}
-                    value={user}>{user}
+                    key={student}
+                    value={student}>{student}
                     </option>;
                 })
               }

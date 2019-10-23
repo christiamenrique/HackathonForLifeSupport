@@ -15,6 +15,18 @@ router.get('/', (req, res) => {
     })
 })
 
+// 2. add a new employee
+router.post('/add', async ({body}, res) => {
+    Employee.create(body)
+    .then(dbEmployees => {
+      res.json(dbEmployees)
+    })
+.catch(err => {
+  res.json(err)
+})
+
+})
+
 // 2. retrieve a specific employee and update it 
 router.post("/update/:id", (req, res) => {
     let id = req.param.id

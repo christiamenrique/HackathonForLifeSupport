@@ -40,10 +40,10 @@ router.post("/update/:id", (req, res) => {
         {
             $set: {
                 name: req.body.name,
-                comments: req.body.comments,
+                description: req.body.description,
                 attendance: req.body.attendance,
                 teamName: req.body.tyeamName,
-                parantPhoneNumber: req.body.parantPhoneNumber,
+                parentPhoneNumber: req.body.parentPhoneNumber,
             }
 
         }, { new: true }

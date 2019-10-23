@@ -14,11 +14,14 @@ function Navbar(){
           <li className="navbar-item">
           <Link to="/create" className="nav-link">Post New Workout</Link>
           </li>
-          <li className="navbar-item">
+          {/* <li className="navbar-item">
           <Link to="/user" className="nav-link">Create User</Link>
-          </li>
+          </li> */}
           <li className="navbar-item">
           <Link to="/student" className="nav-link">Create Student</Link>
+          </li>
+          <li className="navbar-item">
+          <Link to="/view-student" className="nav-link">Student</Link>
           </li>
         </ul>
         </div>

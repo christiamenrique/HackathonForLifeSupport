@@ -44,7 +44,7 @@ router.post("/update/:id", (req, res) => {
       },
       {
         $set: {
-          username: req.body.username,
+          name: req.body.name,
           description: req.body.description,
           duration: req.body.duration,
           date: req.body.date

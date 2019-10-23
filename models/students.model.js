@@ -7,14 +7,14 @@ const studentsSchema = new Schema(
         name: {
             type: String,
             required: true,
-            unique: true,
             trim: true,
-            minlength: 3
+            unique: true,
         },
 
         DOB: {
-            type: Date
-            // required: true,
+            type: Date,
+            trim: true
+
         },
 
         description: {
@@ -39,20 +39,24 @@ const studentsSchema = new Schema(
             type: Number,
             trim: true
         },
+
         studentCreated: {
             type: Date,
-            default: Date.now
+            default: Date.now,
+            trim: true
+
         },
-        parantName: {
+
+        parentName: {
             type: String,
             required: true
         },
 
-        parantPhoneNumber: {
+        parentPhoneNumber: {
+            required: true,
             type: String,
-            trim: true,
-            unique: true,
-            validate: [/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/]
+            validate: [/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/],
+            trim: true
         }
 
     },

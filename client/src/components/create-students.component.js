@@ -31,29 +31,6 @@ export default class CreateStudent extends Component {
         }
     }
 
-    //   componentDidMount() {
-    //     axios.get('/students/')
-    //       .then(response => {
-    //         if (response.data.length > 0) {
-    //           this.setState({
-
-    //               name: response.data.name,
-    //               description: response.data.description,
-    //               DOB: response.data.DOB,
-    //               win: response.data.win,
-    //               loss: response.data.loss,
-    //               parentName: response.data.parentName,
-    //               parentPhoneNumber: response.data.parentPhoneNumber,
-
-    //           })
-    //         }
-    //       })
-    //       .catch((error) => {
-    //         console.log(error);
-    //       })
-
-    //   }
-
       onChangeName(e) {
         this.setState({
             name: e.target.value
@@ -110,7 +87,7 @@ export default class CreateStudent extends Component {
 
             name: this.state.name,
             description: this.state.description,
-            teamName: this.state.description,
+            teamName: this.state.teamName,
             DOB: this.state.DOB,
             win: this.state.win,
             loss: this.state.loss,
@@ -123,7 +100,7 @@ export default class CreateStudent extends Component {
         axios.post('/students/add', students)
             .then(res => console.log(res.data));
 
-        window.location = '/student';
+        window.location = '/view-student';
     }
 
     render() {

@@ -1,69 +1,69 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+// import React, { Component } from 'react';
+// import axios from 'axios';
 
-export default class CreateUser extends Component {
-  constructor(props) {
-    super(props);
+// export default class CreateUser extends Component {
+//   constructor(props) {
+//     super(props);
 
-    this.onChangeUsername = this.onChangeUsername.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-    this.state = {
-      username: ''
-    }
-  }
+//     this.onChangeUsername = this.onChangeUsername.bind(this);
+//     this.onSubmit = this.onSubmit.bind(this);
+//     this.state = {
+//       username: ''
+//     }
+//   }
 
-  onChangeUsername(e) {
-    this.setState({
-      username: e.target.value
-    })
-  }
+//   onChangeUsername(e) {
+//     this.setState({
+//       username: e.target.value
+//     })
+//   }
 
-  onSubmit(e) {
-    e.preventDefault();
+//   onSubmit(e) {
+//     e.preventDefault();
 
-    const user = {
-      username: this.state.username
-    }
+//     const user = {
+//       username: this.state.username
+//     }
 
-    console.log(user);
+//     console.log(user);
 
-    axios.post('/users/add', user)
-      .then(res => console.log(res.data));
+//     axios.post('/users/add', user)
+//       .then(res => console.log(res.data));
 
-    this.setState({
-      username: ''
-    })
-  }
+//     this.setState({
+//       username: ''
+//     })
+//   }
 
-  // connects to delete user api
-  deleteUsers(id) {
-    axios.delete('/user/'+id)
-      .then(response => { console.log(response.data)});
+//   // connects to delete user api
+//   deleteUsers(id) {
+//     axios.delete('/user/'+id)
+//       .then(response => { console.log(response.data)});
 
-    this.setState({
-      exercises: this.state.username.filter(el => el._id !== id)
-    })
-  }
+//     this.setState({
+//       exercises: this.state.username.filter(el => el._id !== id)
+//     })
+//   }
 
-  render() {
-    return (
-      <div>
-        <h3>Create New User</h3>
-        <form onSubmit={this.onSubmit}>
-          <div className="form-group"> 
-            <label>Username: </label>
-            <input  type="text"
-                required
-                className="form-control"
-                value={this.state.username}
-                onChange={this.onChangeUsername}
-                />
-          </div>
-          <div className="form-group">
-            <input type="submit" value="Create User" className="btn btn-primary" />
-          </div>
-        </form>
-      </div>
-    )
-  }
-}
+//   render() {
+//     return (
+//       <div>
+//         <h3>Create New User</h3>
+//         <form onSubmit={this.onSubmit}>
+//           <div className="form-group"> 
+//             <label>Username: </label>
+//             <input  type="text"
+//                 required
+//                 className="form-control"
+//                 value={this.state.username}
+//                 onChange={this.onChangeUsername}
+//                 />
+//           </div>
+//           <div className="form-group">
+//             <input type="submit" value="Create User" className="btn btn-primary" />
+//           </div>
+//         </form>
+//       </div>
+//     )
+//   }
+// }
