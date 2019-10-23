@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
  
 })
 
-// 2. add a new user
+// 2. add a new student
   router.post('/add', async ({body}, res) => {
       Students.create(body)
       .then(dbStudents => {

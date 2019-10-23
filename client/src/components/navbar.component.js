@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+// , { Component } 
+import React from 'react'; 
 import { Link } from 'react-router-dom';
 
 function Navbar(){ 
@@ -15,6 +16,9 @@ function Navbar(){
           </li>
           <li className="navbar-item">
           <Link to="/user" className="nav-link">Create User</Link>
+          </li>
+          <li className="navbar-item">
+          <Link to="/student" className="nav-link">Create Student</Link>
           </li>
         </ul>
         </div>

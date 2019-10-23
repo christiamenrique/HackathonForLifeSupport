@@ -13,18 +13,18 @@ const studentsSchema = new Schema(
         },
 
         DOB: {
-            type: Date,
-            required: true,
+            type: Date
+            // required: true,
         },
 
-        comments: {
+        description: {
             type: String,
         },
 
-        attendance: {
-            type: Boolean,
-            required: true
-        },
+        // attendance: {
+        //     type: Boolean,
+        //     required: true
+        // },
 
         teamName: {
             type: String,
