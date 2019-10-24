@@ -1,6 +1,5 @@
-import React from "react";
-// import nav from "react-bootstrap";
-// import moonIcon from "/";
+
+import React from 'react';
 
 export default function HomeNav() {
   return (
@@ -13,7 +12,6 @@ export default function HomeNav() {
       >
         <span class="navbar-toggler-icon">&#9776;</span>
       </button>
-
       <a class="navbar-brand" href="/index">
         <img
           className="taco"
@@ -39,3 +37,4 @@ export default function HomeNav() {
     </nav>
   );
 }
+

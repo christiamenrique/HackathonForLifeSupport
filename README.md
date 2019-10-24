@@ -10,7 +10,7 @@
 # Install
 
 * Open terminal
-* git clone https://github.com/christiamenrique/life_support.git
+* git clone https://github.com/christiamenrique/HackathonForLifeSupport.git
 * install the node packages using (npm install). 
 * Create Atlas account to storage date online.
 * Create Heroku account to starage web page.
@@ -36,7 +36,7 @@
 
 # Link to Heroku
 
-* https://life-support-challenge.herokuapp.com/
+* https://hackaton-for-life-sport.herokuapp.com/
 
 # Authors
 * Christiam Hernandez
