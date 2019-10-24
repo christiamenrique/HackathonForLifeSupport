@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import axios from 'axios';
 import "../style/employee_card.scss";
+import EmployeeNav from "../elements/employeenav"
+
+
 
 const Employee = props => (
 
@@ -18,6 +21,8 @@ const Employee = props => (
 )
 
 export default class EmployeesList extends Component {
+
+
     constructor(props) {
         super(props);
         this.state = { employees: [] };

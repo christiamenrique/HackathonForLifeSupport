@@ -1,8 +1,8 @@
+import React from "react";
+// import nav from "react-bootstrap";
+// import moonIcon from "/";
 
-import React from 'react';
-
-
-export default function HomeNav() {
+export default function StudentNav() {
   return (
     <nav class="navbar navbar-expand-lg fixed-top">
       <button
@@ -13,6 +13,7 @@ export default function HomeNav() {
       >
         <span class="navbar-toggler-icon">&#9776;</span>
       </button>
+
       <a class="navbar-brand" href="/index">
         <img
           className="taco"
@@ -29,8 +30,23 @@ export default function HomeNav() {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login">
-              LOGIN
+            <a class="nav-link" href="/view-student">
+              STATS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/exercise-list">
+              EXERCISE
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/calender">
+              CALENDER
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/chat">
+              CHART
             </a>
           </li>
         </ul>
@@ -38,4 +54,3 @@ export default function HomeNav() {
     </nav>
   );
 }
-
