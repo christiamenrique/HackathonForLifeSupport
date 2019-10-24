@@ -31,9 +31,13 @@ function Home() {
 
         <div className="container">
         
-
+        <br></br>
+      <br></br>
+      <br></br>
         <hr className="featurette-divider"></hr>
-
+        <br></br>
+      <br></br>
+      <br></br>
         <div className="row featurette">
           <div className="col-md-7">
             <h2 className="featurette-heading">
@@ -58,9 +62,13 @@ function Home() {
             {/* {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" "bd-placeholder-img-lg featurette-image img-fluid mx-auto" %} */}
           </div>
         </div>
-
+        <br></br>
+      <br></br>
+      <br></br>
         <hr className="featurette-divider"></hr>
-
+        <br></br>
+      <br></br>
+      <br></br>
         <div className="row featurette">
           <div className="col-md-7 order-md-2">
             <h2 className="featurette-heading">
@@ -86,10 +94,18 @@ function Home() {
             {/* {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" "bd-placeholder-img-lg featurette-image img-fluid mx-auto" %} */}
           </div>
         </div>
-
+        <br></br>
+      <br></br>
+      <br></br>
         <hr className="featurette-divider"></hr>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       </div>
+
     </>
   );
 }
