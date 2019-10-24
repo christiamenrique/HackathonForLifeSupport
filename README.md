@@ -42,3 +42,7 @@
 * Christiam Hernandez
 * Wendy Deras
 * Lenny Dickey
+
+#License
+
+Apache License 2.0 Copyright (c) 2019 
