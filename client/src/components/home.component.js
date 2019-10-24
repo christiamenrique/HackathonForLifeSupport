@@ -20,7 +20,7 @@ function Home() {
         <div className="container h-100">
           <div className="d-flex h-100 text-center align-items-center">
             <div className="w-100 text-white">
-              <h1 className="display-3">Life Sports</h1>
+              <h1 className="display-3 we">Life Sports</h1>
               <p className="lead mb-0"></p>
             </div>
           </div>

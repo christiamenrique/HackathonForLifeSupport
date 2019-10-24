@@ -14,7 +14,7 @@ export default function EmployeeNav() {
         <span class="navbar-toggler-icon">&#9776;</span>
       </button>
 
-      <a class="navbar-brand" href="/index">
+      <a class="navbar-brand" href="/">
         <img
           className="taco"
           src="https://image.flaticon.com/icons/png/128/2128/2128322.png"

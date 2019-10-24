@@ -84,6 +84,11 @@ export default class CreateExercise extends Component {
     return (
       <div>
         <EmployeeNav />
+        <br></br>
+                <br></br>
+                <br></br>  <br></br>
+                <br></br>
+                <br></br>
         <form className="form" onSubmit={this.onSubmit}>
         <h3 className="employee">Create New Exercise Log</h3>
           <div className="form-group">
@@ -136,6 +141,9 @@ export default class CreateExercise extends Component {
             <input type="submit" value="Create Exercise Log" className="btn btn-primary" />
           </div>
         </form>
+        <br></br>
+                <br></br>
+                <br></br>
       </div>
     )
   }
