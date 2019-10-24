@@ -1,6 +1,7 @@
 
 import React from 'react';
 
+
 export default function HomeNav() {
   return (
     <nav class="navbar navbar-expand-lg fixed-top">

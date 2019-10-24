@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import "../style/create-employee.css";
 import EmployeeNav from "../elements/employeenav";
 
 export default class CreateEmployee extends Component {
@@ -79,71 +80,72 @@ export default class CreateEmployee extends Component {
 <br></br>
 <br></br>
 
-        <h3>Create Employee</h3>
-        <form onSubmit={this.onSubmit}>
-          <div className="form-group">
-            <label>Full Name: </label>
-            <input
-              type="text"
-              required
-              className="form-control"
-              value={this.state.name}
-              onChange={this.onChangeName}
-            />
-          </div>
-          <div className="form-group">
-            <label>Profession: </label>
-            <input
-              type="text"
-              required
-              className="form-control"
-              value={this.state.profession}
-              onChange={this.onChangeProfession}
-            />
-          </div>
-          <div className="form-group">
-            <label>Work State: </label>
-            <input
-              type="text"
-              className="form-control"
-              value={this.state.address}
-              onChange={this.onChangeAddress}
-            />
-          </div>
-          <div className="form-group">
-            <label>Phone Number (###-###-####): </label>
-            <input
-              required
-              type="text"
-              className="form-control"
-              value={this.state.phoneNumber}
-              onChange={this.onChangePhoneNumber}
-            />
-          </div>
-          <div className="form-group">
-            <label>Email Address: </label>
-            <input
-              type="text"
-              className="form-control"
-              value={this.state.email}
-              onChange={this.onChangeEmailAddress}
-            />
-          </div>
-          <div className="form-group">
-            <label>Submit Date: </label>
-            <div>
-              <DatePicker selected={this.state.employeeCreated} />
-            </div>
-          </div>
-          <div className="form-group">
-            <input
-              type="submit"
-              value="Create Employee"
-              className="btn btn-primary"
-            />
-          </div>
-        </form>
-      </React.Fragment>
-    );
-  }
+    
+                {/* <h3 className="employee">Create Employee</h3> */}
+                <form className="form"  onSubmit={this.onSubmit}>
+                <h3 className="employee">Create Employee</h3>
+                    <div className="form-group">
+                        <label><strong>Full Name:</strong></label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            value={this.state.name}
+                            onChange={this.onChangeName}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label><strong>Profession:</strong></label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            value={this.state.profession}
+                            onChange={this.onChangeProfession}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label><strong>Work State:</strong></label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={this.state.address}
+                            onChange={this.onChangeAddress}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label><strong>Phone Number (###-###-####):</strong></label>
+                        <input
+                            required
+                            type="text"
+                            className="form-control"
+                            value={this.state.phoneNumber}
+                            onChange={this.onChangePhoneNumber}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label><strong>Email Address:</strong></label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={this.state.email}
+                            onChange={this.onChangeEmailAddress}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label><strong>Submit Date:</strong></label>
+                        <div>
+                            <DatePicker
+                                selected={this.state.employeeCreated}
+                            />
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <input type="submit" value="Create Employee" className="btn btn-primary" />
+                    </div>
+                </form>
+            </React.Fragment>
+        )
+    }
 }
+

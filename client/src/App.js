@@ -25,6 +25,7 @@ import "./style/wave.css";
 function App() {
   return (
     <Router>
+
       <div>
         <div className="header">
           <div className="">

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import "../style/create-employee.css";
+
 
 export default class CreateStudent extends Component {
     constructor(props) {
@@ -106,10 +108,10 @@ export default class CreateStudent extends Component {
     render() {
         return (
             <React.Fragment>
-                <h3>Create New Student</h3>
-                <form onSubmit={this.onSubmit}>
+                <form className="form" onSubmit={this.onSubmit}>
+                <h3 className="employee">Create Student</h3>
                     <div className="form-group">
-                        <label>Full Name: </label>
+                        <label><strong>Full Name:</strong></label>
                         <input
                             type="text"
                             required
@@ -119,7 +121,7 @@ export default class CreateStudent extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Description: </label>
+                        <label><strong>Description:</strong></label>
                         <input
                             type="text"
                             required
@@ -129,7 +131,7 @@ export default class CreateStudent extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Team Name: </label>
+                        <label><strong>Team Name:</strong></label>
                         <input
                             type="text"
                             className="form-control"
@@ -138,7 +140,7 @@ export default class CreateStudent extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Date Of Birth MM/DD/YYYY: </label>
+                        <label><strong>Date Of Birth MM/DD/YYYY:</strong></label>
                         <input
                             type="text"
                             required
@@ -148,7 +150,7 @@ export default class CreateStudent extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Win: </label>
+                        <label><strong>Win:</strong></label>
                         <input
                             type="number"
                             className="form-control"
@@ -157,7 +159,7 @@ export default class CreateStudent extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Loss: </label>
+                        <label><strong>Loss:</strong></label>
                         <input
                             type="number"
                             className="form-control"
@@ -166,7 +168,7 @@ export default class CreateStudent extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Guardian Full Name: </label>
+                        <label><strong>Guardian Full Name:</strong></label>
                         <input
                             required
                             type="text"
@@ -176,7 +178,7 @@ export default class CreateStudent extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Guardian Phone Number (###-###-####): </label>
+                        <label><strong>Guardian Phone Number (###-###-####):</strong></label>
                         <input
                             required
                             type="text"
@@ -186,7 +188,7 @@ export default class CreateStudent extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Submit Date: </label>
+                        <label><strong>Submit Date:</strong></label>
                         <div>
                             <DatePicker
                                 selected={this.state.studentCreated}

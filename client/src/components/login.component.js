@@ -161,6 +161,7 @@ function Home() {
                               Remember password
                             </label>
                           </div>
+
                           <Link to="/view-employee" className="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2"
                           > Sing in</Link>
 
@@ -214,6 +215,7 @@ function Home() {
                               Remember password
                             </label>
                           </div>
+
                           <Link to="/view-employee" className="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2"
                           > Sing in</Link>
 
