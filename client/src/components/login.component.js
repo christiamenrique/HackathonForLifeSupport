@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Homenav from "../elements/homenav";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -104,6 +105,7 @@ function Home() {
                               Remember password
                             </label>
                           </div>
+                          <Link to="/view-student" className="nav-link">View Student</Link>
                           <button
                             className="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2"
                             type="submit"
@@ -160,7 +162,7 @@ function Home() {
                               Remember password
                             </label>
                           </div>
-                          <button
+                          <button href="view-student"
                             className="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2"
                             type="submit"
                           >
@@ -216,7 +218,7 @@ function Home() {
                               Remember password
                             </label>
                           </div>
-                          <button
+                          <button href="view-employee"
                             className="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2"
                             type="submit"
                           >

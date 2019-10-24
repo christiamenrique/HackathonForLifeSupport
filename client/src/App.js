@@ -32,7 +32,7 @@ function App() {
         <Route path="/create" component={CreateExercise} />
         {/* <Route path="/user" component={CreateUser} /> */}
         <Route path="/student" component={CreateStudent} />
-        <Route path="/view-student" component={StudentsList} />
+        <Route path="./view-student" component={StudentsList} />
         <Route path="/employee" component={CreateEmployee} />
         <Route path="/view-employee" component={EmployeesList} />
         {/* <Route path="/horizontal_bar" render={() => <HorizontalBar />} /> */}

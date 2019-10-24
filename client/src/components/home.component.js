@@ -78,7 +78,7 @@ function Home() {
         <div className="row featurette">
           <div className="col-md-7">
             <h2 className="featurette-heading">
-              Founded August 2018 <span "text-muted">LifeKicks.</span>
+              Founded August 2018 <span className="text-muted">LifeKicks.</span>
             </h2>
             <p className="lead">
               LifeKicks was founded in August of 2018 as the second 501(c)(3)
@@ -100,7 +100,7 @@ function Home() {
         <div className="row featurette">
           <div className="col-md-7 order-md-2">
             <h2 className="featurette-heading">
-              Founded March 2017 . <span "text-muted">Life Hoops.</span>
+              Founded March 2017 . <span className="text-muted">Life Hoops.</span>
             </h2>
             <p className="lead">
               LifeHoops is a Charlotte-based 501(c)(3) nonprofit that combines

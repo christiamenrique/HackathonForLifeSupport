@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import "../style/create-employee.css";
 export default class CreateEmployee extends Component {
     constructor(props) {
         super(props);
@@ -71,10 +72,11 @@ export default class CreateEmployee extends Component {
     render() {
         return (
             <React.Fragment>
-                <h3>Create Employee</h3>
-                <form onSubmit={this.onSubmit}>
+                {/* <h3 className="employee">Create Employee</h3> */}
+                <form className="form"  onSubmit={this.onSubmit}>
+                <h3 className="employee">Create Employee</h3>
                     <div className="form-group">
-                        <label>Full Name: </label>
+                        <label><strong>Full Name:</strong></label>
                         <input
                             type="text"
                             required
@@ -84,7 +86,7 @@ export default class CreateEmployee extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Profession: </label>
+                        <label><strong>Profession:</strong></label>
                         <input
                             type="text"
                             required
@@ -94,7 +96,7 @@ export default class CreateEmployee extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Work State: </label>
+                        <label><strong>Work State:</strong></label>
                         <input
                             type="text"
                             className="form-control"
@@ -103,7 +105,7 @@ export default class CreateEmployee extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Phone Number (###-###-####): </label>
+                        <label><strong>Phone Number (###-###-####):</strong></label>
                         <input
                             required
                             type="text"
@@ -113,7 +115,7 @@ export default class CreateEmployee extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Email Address: </label>
+                        <label><strong>Email Address:</strong></label>
                         <input
                             type="text"
                             className="form-control"
@@ -122,7 +124,7 @@ export default class CreateEmployee extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Submit Date: </label>
+                        <label><strong>Submit Date:</strong></label>
                         <div>
                             <DatePicker
                                 selected={this.state.employeeCreated}
