@@ -27,7 +27,7 @@ function Home() {
       <div>
         <div className="row">
           <div className="col-lg-4">
-            {/* {% include icons/placeholder.svg width="140" height="140" background="#777" color="#777" class="rounded-circle" %} */}
+            {/* {% include icons/placeholder.svg width="140" height="140" background="#777" color="#777" "rounded-circle" %} */}
             <h2>Heading</h2>
             <p>
               Donec sed odio dui. Etiam porta sem malesuada magna mollis
@@ -42,7 +42,7 @@ function Home() {
             </p>
           </div>
           <div className="col-lg-4">
-            {/* {% include icons/placeholder.svg width="140" height="140" background="#777" color="#777" class="rounded-circle" %} */}
+            {/* {% include icons/placeholder.svg width="140" height="140" background="#777" color="#777" "rounded-circle" %} */}
             <h2>Heading</h2>
             <p>
               Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
@@ -57,7 +57,7 @@ function Home() {
             </p>
           </div>
           <div className="col-lg-4">
-            {/* {% include icons/placeholder.svg width="140" height="140" background="#777" color="#777" class="rounded-circle" %} */}
+            {/* {% include icons/placeholder.svg width="140" height="140" background="#777" color="#777" "rounded-circle" %} */}
             <h2>Heading</h2>
             <p>
               Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
@@ -78,7 +78,7 @@ function Home() {
         <div className="row featurette">
           <div className="col-md-7">
             <h2 className="featurette-heading">
-              Founded August 2018 <span class="text-muted">LifeKicks.</span>
+              Founded August 2018 <span "text-muted">LifeKicks.</span>
             </h2>
             <p className="lead">
               LifeKicks was founded in August of 2018 as the second 501(c)(3)
@@ -91,7 +91,7 @@ function Home() {
             </p>
           </div>
           <div className="col-md-5">
-            {/* {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %} */}
+            {/* {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" "bd-placeholder-img-lg featurette-image img-fluid mx-auto" %} */}
           </div>
         </div>
 
@@ -100,7 +100,7 @@ function Home() {
         <div className="row featurette">
           <div className="col-md-7 order-md-2">
             <h2 className="featurette-heading">
-              Founded March 2017 . <span class="text-muted">Life Hoops.</span>
+              Founded March 2017 . <span "text-muted">Life Hoops.</span>
             </h2>
             <p className="lead">
               LifeHoops is a Charlotte-based 501(c)(3) nonprofit that combines
@@ -115,11 +115,11 @@ function Home() {
           <div className="col-md-5 order-md-1">
             <img
               src="https://lifesports.org/wp-content/uploads/lifehoops-logo-main-menu.png"
-              class="rounded float-left"
+              className="rounded float-left"
               alt="..."
             ></img>
 
-            {/* {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %} */}
+            {/* {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" "bd-placeholder-img-lg featurette-image img-fluid mx-auto" %} */}
           </div>
         </div>
 
