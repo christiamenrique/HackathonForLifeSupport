@@ -45,4 +45,4 @@
 
 #License
 
-Apache License 2.0 Copyright (c) 2019 
+* Apache License 2.0 Copyright (c) 2019 
