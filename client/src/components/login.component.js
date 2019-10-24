@@ -23,7 +23,7 @@ function Home() {
                     >
                       <li className="nav-item">
                         <a
-                          className="nav-link active"
+                          className="nav-link active badge-warning"
                           id="pills-home-tab"
                           data-toggle="pill"
                           href="#pills-home"
@@ -36,7 +36,7 @@ function Home() {
                       </li>
                       <li className="nav-item">
                         <a
-                          className="nav-link"
+                          className="nav-link badge-warning"
                           id="pills-profile-tab"
                           data-toggle="pill"
                           href="#pills-profile"
@@ -47,7 +47,7 @@ function Home() {
                           Parent
                         </a>
                       </li>
-                      <li className="nav-item">
+                      <li className="nav-item badge-warning">
                         <a
                           className="nav-link"
                           id="pills-contact-tab"

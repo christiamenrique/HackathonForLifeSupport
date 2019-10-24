@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import { Link } from 'react-router-dom';
 import axios from "axios";
 import "../style/student_card.scss";
+import EmployeeNav from "../elements/employeenav"
 
 const Student = props => (
 
@@ -46,7 +47,14 @@ export default class ExercisesList extends Component {
   }
 
   render() {
-    return <div className="grid-container">{this.exerciseList()}</div>;
+  
+    return    <div>
+ 
+    <EmployeeNav/>
+    <br></br>
+    <div className="grid-container steph2">{this.exerciseList()}</div>
+    </div>
+    ;
   }
 }
 

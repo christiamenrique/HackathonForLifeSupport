@@ -1,9 +1,19 @@
 import React from "react";
 import "../style/chat.css"
+import EmployeeNav from "../elements/employeenav";
 
 function Chat() {
   return (
     <>
+    <EmployeeNav />
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+ 
+
       <div className="hi container py-5 px-4">
         <div className="row rounded-lg overflow-hidden shadow">
           <div className="col-5 px-0">
@@ -218,7 +228,7 @@ function Chat() {
                 <div className="media-body ml-3">
                   <div className="bg-light rounded py-2 px-3 mb-2">
                     <p className="text-small mb-0 text-muted">
-                      Test which is a new approach all solutions
+                      Good job!
                     </p>
                   </div>
                   <p className="small text-muted">12:00 PM | Aug 13</p>
@@ -229,7 +239,7 @@ function Chat() {
                 <div className="media-body">
                   <div className="bg-primary rounded py-2 px-3 mb-2">
                     <p className="text-small mb-0 text-white">
-                      Test which is a new approach to have all solutions
+                     Good job !
                     </p>
                   </div>
                   <p className="small text-muted">12:00 PM | Aug 13</p>
@@ -246,7 +256,7 @@ function Chat() {
                 <div className="media-body ml-3">
                   <div className="bg-light rounded py-2 px-3 mb-2">
                     <p className="text-small mb-0 text-muted">
-                      Test, which is a new approach to have
+                      Do you like sports?
                     </p>
                   </div>
                   <p className="small text-muted">12:00 PM | Aug 13</p>
@@ -257,7 +267,7 @@ function Chat() {
                 <div className="media-body">
                   <div className="bg-primary rounded py-2 px-3 mb-2">
                     <p className="text-small mb-0 text-white">
-                      Apollo University, Delhi, India Test
+                     I love sports
                     </p>
                   </div>
                   <p className="small text-muted">12:00 PM | Aug 13</p>
@@ -274,7 +284,7 @@ function Chat() {
                 <div className="media-body ml-3">
                   <div className="bg-light rounded py-2 px-3 mb-2">
                     <p className="text-small mb-0 text-muted">
-                      Test, which is a new approach
+                      How was the game?
                     </p>
                   </div>
                   <p className="small text-muted">12:00 PM | Aug 13</p>
@@ -285,7 +295,7 @@ function Chat() {
                 <div className="media-body">
                   <div className="bg-primary rounded py-2 px-3 mb-2">
                     <p className="text-small mb-0 text-white">
-                      Apollo University, Delhi, India Test
+                      Nice Game !
                     </p>
                   </div>
                   <p className="small text-muted">12:00 PM | Aug 13</p>

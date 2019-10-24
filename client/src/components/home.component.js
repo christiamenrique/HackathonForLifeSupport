@@ -37,7 +37,7 @@ function Home() {
         <div className="row featurette">
           <div className="col-md-7">
             <h2 className="featurette-heading">
-              Founded August 2018 <span className="text-muted">LifeKicks.</span>
+              Life Kicks <span className="text-muted"></span>
             </h2>
             <p className="lead">
               LifeKicks was founded in August of 2018 as the second 501(c)(3)
@@ -50,6 +50,11 @@ function Home() {
             </p>
           </div>
           <div className="col-md-5">
+          <img
+              src="https://lifesports.org/wp-content/uploads/life-kicks-logo-resized.png"
+              className="rounded float-left"
+              alt="..."
+            ></img>
             {/* {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" "bd-placeholder-img-lg featurette-image img-fluid mx-auto" %} */}
           </div>
         </div>
@@ -59,7 +64,7 @@ function Home() {
         <div className="row featurette">
           <div className="col-md-7 order-md-2">
             <h2 className="featurette-heading">
-              Founded March 2017 . <span className="text-muted">Life Hoops.</span>
+            Life Hoops <span className="text-muted"></span>
             </h2>
             <p className="lead">
               LifeHoops is a Charlotte-based 501(c)(3) nonprofit that combines

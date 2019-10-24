@@ -1,9 +1,21 @@
 import React, { Component } from "react";
 import "../style/calender.scss";
+import EmployeeNav from "../elements/employeenav";
 
 function Calender() {
   return (
     <>
+    <EmployeeNav />
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
       <main className="calendar-contain">
         <section className="title-bar">
           <button className="title-bar__burger">
@@ -241,6 +253,11 @@ function Calender() {
           </section>
         </section>
       </main>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
     </>
   );
 }

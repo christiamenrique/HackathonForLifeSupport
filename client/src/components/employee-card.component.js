@@ -47,11 +47,17 @@ export default class EmployeesList extends Component {
 
     render() {
         return (
+<div><EmployeeNav/>
+<br></br>
 
-            <div className="main-grid">
+            <div className="main-grid steph">
+
                 {this.exerciseList()}
             </div>
+            
 
+
+</div>
         )
     }
 }

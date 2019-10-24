@@ -3,6 +3,7 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import "../style/create-employee.css";
+import EmployeeNav from "../elements/employeenav"
 
 
 export default class CreateStudent extends Component {
@@ -108,6 +109,10 @@ export default class CreateStudent extends Component {
     render() {
         return (
             <React.Fragment>
+                <EmployeeNav/>
+                <br></br>
+                <br></br>
+                <br></br>
                 <form className="form" onSubmit={this.onSubmit}>
                 <h3 className="employee">Create Student</h3>
                     <div className="form-group">

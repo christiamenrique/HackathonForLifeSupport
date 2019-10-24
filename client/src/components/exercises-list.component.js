@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import EmployeeNav from "../elements/employeenav";
 
 const Exercise = props => (
   <tr>
@@ -51,7 +52,24 @@ export default class ExercisesList extends Component {
 
   render() {
     return (
+
       <div>
+        <EmployeeNav />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br> <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <h3>Logged Exercises</h3>
         <table className="table">
           <thead className="thead-light">
@@ -67,7 +85,21 @@ export default class ExercisesList extends Component {
             { this.exerciseList() }
           </tbody>
         </table>
-      </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>  <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>     </div>
     )
   }
 }

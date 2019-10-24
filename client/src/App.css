@@ -430,3 +430,8 @@ btn {
 .taco {
   width: 50px;
 }
+
+.badge-warning{
+  margin: 10px;
+  text-align: center;
+}
