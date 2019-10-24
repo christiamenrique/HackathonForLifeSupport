@@ -24,11 +24,7 @@ export default function EmployeeNav() {
 
       <div class="collapse navbar-collapse" id="navigation-bar">
         <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="/view-student">
-              STATS
-            </a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="/view-student">
               STUDENTS
@@ -76,9 +72,7 @@ export default function EmployeeNav() {
               <a class="dropdown-item" href="/create">
                 Create Exercise
               </a>
-              <a class="dropdown-item" href="/EditExercise">
-                Edit Exercise
-              </a>
+            
             </div>
           </li>
         </ul>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-
+import EmployeeNav from "../elements/employeenav";
 export default class CreateExercise extends Component {
   constructor(props) {
     super(props);
@@ -83,10 +83,11 @@ export default class CreateExercise extends Component {
   render() {
     return (
       <div>
-        <h3>Create New Exercise Log</h3>
-        <form onSubmit={this.onSubmit}>
+        <EmployeeNav />
+        <form className="form" onSubmit={this.onSubmit}>
+        <h3 className="employee">Create New Exercise Log</h3>
           <div className="form-group">
-            <label>Students name: </label>
+            <label><strong>Students name:</strong></label>
             <select
               type="text"
               required
@@ -104,7 +105,7 @@ export default class CreateExercise extends Component {
             </select>
           </div>
           <div className="form-group">
-            <label>Description: </label>
+            <label><strong>Description:</strong></label>
             <input type="text"
               required
               className="form-control"
@@ -113,7 +114,7 @@ export default class CreateExercise extends Component {
             />
           </div>
           <div className="form-group">
-            <label>Duration (in minutes): </label>
+            <label><strong>Duration (in minutes): </strong></label>
             <input
               type="text"
               className="form-control"
@@ -122,7 +123,7 @@ export default class CreateExercise extends Component {
             />
           </div>
           <div className="form-group">
-            <label>Date: </label>
+            <label><strong>Date: </strong></label>
             <div>
               <DatePicker
                 selected={this.state.date}
