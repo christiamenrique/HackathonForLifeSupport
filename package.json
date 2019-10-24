@@ -26,7 +26,8 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.5.7",
     "node-sass": "^4.12.0",
-    "react-chartjs-2": "^2.8.0"
+    "react-chartjs-2": "^2.8.0",
+    "reactstrap": "^8.1.1"
   },
   "engines": {
     "node": "10.16.0"
