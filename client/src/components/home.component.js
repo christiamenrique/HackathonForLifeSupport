@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import Homenav from "../elements/homenav";
+import "../style/wave.css"
 
 function Home() {
   return (
     <>
+    
       <Homenav />
       <header>
         <div className="overlay"></div>
