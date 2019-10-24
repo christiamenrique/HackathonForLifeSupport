@@ -27,9 +27,8 @@ function App() {
     <Router>
       <div>
         <div className="header">
-          <div className="container">
+          <div className="">
             {/* <Navbar /> */}
-            <br />
             <Route path="/" exact component={Home} />
             <Route path="/exercise-list" exact component={ExercisesList} />
 

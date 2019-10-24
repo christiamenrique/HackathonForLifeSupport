@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+
+
 function Footer() {
   return (
     <footer class="site-footer">
@@ -28,11 +30,7 @@ function Footer() {
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
-              <li>
-                <a class="dribbble" href="#">
-                  <i class="fa fa-dribbble"></i>
-                </a>
-              </li>
+          
               <li>
                 <a class="linkedin" href="#">
                   <i class="fa fa-linkedin"></i>
