@@ -31,7 +31,7 @@ export default class CreateStudent extends Component {
         }
     }
 
-      onChangeName(e) {
+    onChangeName(e) {
         this.setState({
             name: e.target.value
         })
@@ -120,7 +120,7 @@ export default class CreateStudent extends Component {
                     </div>
                     <div className="form-group">
                         <label>Description: </label>
-                        <input 
+                        <input
                             type="text"
                             required
                             className="form-control"
@@ -130,7 +130,7 @@ export default class CreateStudent extends Component {
                     </div>
                     <div className="form-group">
                         <label>Team Name: </label>
-                        <input 
+                        <input
                             type="text"
                             className="form-control"
                             value={this.state.teamName}
@@ -139,7 +139,7 @@ export default class CreateStudent extends Component {
                     </div>
                     <div className="form-group">
                         <label>Date Of Birth MM/DD/YYYY: </label>
-                        <input 
+                        <input
                             type="text"
                             required
                             className="form-control"
@@ -149,7 +149,7 @@ export default class CreateStudent extends Component {
                     </div>
                     <div className="form-group">
                         <label>Win: </label>
-                        <input 
+                        <input
                             type="number"
                             className="form-control"
                             value={this.state.win}
@@ -159,7 +159,7 @@ export default class CreateStudent extends Component {
                     <div className="form-group">
                         <label>Loss: </label>
                         <input
-                             type="number"
+                            type="number"
                             className="form-control"
                             value={this.state.loss}
                             onChange={this.onChangeLoss}

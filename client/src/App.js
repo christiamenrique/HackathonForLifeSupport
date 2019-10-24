@@ -10,7 +10,8 @@ import CreateExercise from "./components/create-exercise.component";
 import CreateStudent from "./components/create-students.component";
 import StudentsList from "./components/student-card.componet";
 import CreateEmployee from "./components/create-employee.component";
-import EmployeesList from './components/employee-card.component';
+import EmployeesList from "./components/employee-card.component";
+// import HorizontalBar from "./components/horizontal-bar.component";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
       <Route path="/view-student" component={StudentsList}/>
       <Route path="/employee" component={CreateEmployee}/>
       <Route path="/view-employee" component={EmployeesList}/>
+      {/* <Route path="/horizontal_bar" render={() => <HorizontalBar />} /> */}
+
       </div>
     </Router>
   );

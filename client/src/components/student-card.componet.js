@@ -8,7 +8,7 @@ const Student = props => (
     <div className="img-cont">
       <img alt="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_CuqQpYzDRQXJ_-4NoVbedjKioYl-7CTvYzeSDIkGRGVObVfKw&s" />
       </div>
-    <p>Name:{props.student.name}</p>
+    <p>Name: {props.student.name}</p>
     <p>Team Name: {props.student.teamName}</p>
     <p>Description: {props.student.description}</p>
     <p>Win: {props.student.win}</p>
