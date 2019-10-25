@@ -21,7 +21,21 @@ const Student = props => (
 export default class ExercisesList extends Component {
   constructor(props) {
     super(props);
-    this.state = { students: [] };
+    this.state = { 
+      students: [],
+      names: [],
+    };
+  }
+  
+  filtering = (event) => {
+    const nameSearch = this.state.students.filter(student => student.name.toLowerCase().search(event.target.value.toLowerCase(),
+    ) !== -1);
+    if(event.target.value !== ""){
+      this.setState({names: nameSearch})
+    } 
+    else {
+      this.setState({names: this.state.students})
+    }
   }
 
   componentDidMount() {
@@ -29,14 +43,17 @@ export default class ExercisesList extends Component {
       .get("/students")
       .then(response => {
         this.setState({ students: response.data });
+        this.setState({ names: response.data});
       })
       .catch(error => {
         console.log(error);
       });
+
+      
   }
 
   exerciseList() {
-    return this.state.students.map(currentstudent => {
+    return this.state.names.map(currentstudent => {
       return <Student student={currentstudent} key={currentstudent.name} />;
     });
   }
@@ -49,7 +66,7 @@ export default class ExercisesList extends Component {
     <br></br>
     <div className="searchBar">
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+      <input class="form-control mr-sm-2" type="search" onChange={e => this.filtering(e)} placeholder="Search" aria-label="Search"/>
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 
@@ -60,7 +77,7 @@ export default class ExercisesList extends Component {
   }
 }
 
-
+ 
 // assigning exe
 // get students info from db
 // get exercises and relate to student
