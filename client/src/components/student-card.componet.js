@@ -8,7 +8,7 @@ const Student = props => (
 
   <div className="grid-item">
     <div className="img-cont">
-      <img alt="img" src={props.student.image} height="300px" width="300px"/>
+      <img alt="img" src={props.student.image} height="200px" width="200px"/>
     </div>
     <p>Name: {props.student.name}</p>
     <p>Team Name: {props.student.teamName}</p>
