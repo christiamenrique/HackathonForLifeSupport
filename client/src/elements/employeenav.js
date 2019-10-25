@@ -16,7 +16,7 @@ export default function EmployeeNav() {
 
       <a className="navbar-brand" href="/">
         <img
-          classNameName="taco"
+          className="taco"
           src="https://image.flaticon.com/icons/png/128/2128/2128322.png"
           alt="Logo"
         />
