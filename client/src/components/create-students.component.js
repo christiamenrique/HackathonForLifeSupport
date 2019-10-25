@@ -10,6 +10,7 @@ export default class CreateStudent extends Component {
     constructor(props) {
         super(props);
 
+        this.onChangeImage = this.onChangeImage.bind(this);
         this.onChangeName = this.onChangeName.bind(this);
         this.onChangeDescription = this.onChangeDescription.bind(this);
         this.onChangeTeamName = this.onChangeTeamName.bind(this);
@@ -22,6 +23,7 @@ export default class CreateStudent extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
+            image:"",
             name: '',
             description: '',
             teamName: '',
@@ -34,6 +36,11 @@ export default class CreateStudent extends Component {
         }
     }
 
+    onChangeImage(e) {
+        this.setState({
+            image: e.target.value
+        })
+    }
     onChangeName(e) {
         this.setState({
             name: e.target.value
@@ -88,6 +95,7 @@ export default class CreateStudent extends Component {
 
         const students = {
 
+            image: this.state.image,
             name: this.state.name,
             description: this.state.description,
             teamName: this.state.teamName,
@@ -103,7 +111,7 @@ export default class CreateStudent extends Component {
         axios.post('/students/add', students)
             .then(res => console.log(res.data));
 
-        // window.location = '/';
+        // window.location = '/view-student';
     }
 
     render() {
@@ -115,6 +123,16 @@ export default class CreateStudent extends Component {
                 <br></br>
                 <form className="form" onSubmit={this.onSubmit}>
                 <h3 className="employee">Create Student</h3>
+                <div className="form-group">
+                        <label><strong>Student Image URL:</strong></label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            value={this.state.image}
+                            onChange={this.onChangeImage}
+                        />
+                    </div>
                     <div className="form-group">
                         <label><strong>Full Name:</strong></label>
                         <input

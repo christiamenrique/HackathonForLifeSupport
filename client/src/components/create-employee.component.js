@@ -8,6 +8,7 @@ import EmployeeNav from "../elements/employeenav";
 export default class CreateEmployee extends Component {
   constructor(props) {
     super(props);
+    this.onChangeImage = this.onChangeImage.bind(this);
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeProfession = this.onChangeProfession.bind(this);
     this.onChangeAddress = this.onChangeAddress.bind(this);
@@ -16,6 +17,7 @@ export default class CreateEmployee extends Component {
     this.onChangeEmployeeCreated = this.onChangeEmployeeCreated.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.state = {
+      image: "",
       name: "",
       profession: "",
       address: "",
@@ -24,6 +26,12 @@ export default class CreateEmployee extends Component {
       employeeCreated: new Date()
     };
   }
+  onChangeImage(e) {
+    this.setState({
+      image: e.target.value
+    })
+  }
+
   onChangeName(e) {
     this.setState({
       name: e.target.value
@@ -59,6 +67,7 @@ export default class CreateEmployee extends Component {
   onSubmit(e) {
     e.preventDefault();
     const employees = {
+      image: this.state.image,
       name: this.state.name,
       profession: this.state.profession,
       address: this.state.address,
@@ -68,7 +77,7 @@ export default class CreateEmployee extends Component {
     };
     console.log(employees);
     axios.post("/employees/add", employees).then(res => console.log(res.data));
-    // window.location = '/view-employee';
+    window.location = '/view-employee';
   }
   render() {
     return (
@@ -85,6 +94,16 @@ export default class CreateEmployee extends Component {
                 <form className="form"  onSubmit={this.onSubmit}>
                 <h3 className="employee">Create Employee</h3>
                     <div className="form-group">
+                    <div className="form-group">
+                        <label><strong>Employee Image link:</strong></label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            value={this.state.image}
+                            onChange={this.onChangeImage}
+                        />
+                    </div>
                         <label><strong>Full Name:</strong></label>
                         <input
                             type="text"

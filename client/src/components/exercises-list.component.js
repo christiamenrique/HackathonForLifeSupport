@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import "../App.css";
 import EmployeeNav from "../elements/employeenav";
 
 const Exercise = props => (
@@ -10,7 +11,7 @@ const Exercise = props => (
     <td>{props.exercise.duration}</td>
     <td>{props.exercise.date.substring(0,10)}</td>
     <td>
-      <Link to={"/edit/"+props.exercise._id}>edit</Link> | <a href="/" onClick={() => { props.deleteExercise(props.exercise._id) }}>delete</a>
+      <Link className="editDelete"to={"/edit/"+props.exercise._id}>edit</Link> | <a className="editDelete" href="/" onClick={() => { props.deleteExercise(props.exercise._id) }}>delete</a>
     </td>
   </tr>
 )
@@ -62,7 +63,8 @@ export default class ExercisesList extends Component {
         <br></br>
         <br></br>
         <br></br>
-        <br></br> <br></br>
+        <br></br> 
+        <br></br>
         <br></br>
         <br></br>
         <br></br>
@@ -89,10 +91,6 @@ export default class ExercisesList extends Component {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>  <br></br>
         <br></br>
         <br></br>
         <br></br>

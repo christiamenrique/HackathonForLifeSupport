@@ -4,24 +4,35 @@
     text-align: center;
   }
 
+  .grid-items p {
+    // padding-top: 30px;
+    padding-bottom: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+  }
+
   .main-grid {
     display: grid;
     justify-content: flex-start;
     grid-gap: 55px;
-    grid-template-columns: 1fr 1fr 1fr;
-    // background: rgb(255, 255, 255);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-radius: 2px;
     height: 30em;
     width: 400px;
     box-shadow: 0 0 45px 0 rgba(0,0,0,.15); 
     text-align: center;
     cursor: pointer;
-    margin-top: 2.7rem;
+    margin-top: 200px;
+    margin-bottom: 800px;
+    margin-left: 30px;
 
     @media screen and (max-width: 1100px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         font-size: 30px;
+        height: 18em;
+        margin-bottom: 600px;
+        margin-left: 50px;
     }
     
     @media screen and (max-width: 800px) {
@@ -29,21 +40,27 @@
         grid-template-columns: 1fr 1fr;
         padding: 5px;
         font-size: 30px;
-        padding-left: 0;
+        margin-left: 80px;
+        margin-bottom: 1200px;
     }
     
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 420px) {
         display: grid;
         grid-template-columns: 1fr;
         font-size: 10px;
-        justify-content: flex-end;
+        // height: 30em;
+        width: 300px;
+        margin-left: 30px; 
+        margin-bottom: 3200px;  
     }
-    @media screen and (max-width: 360px) {
+
+    @media screen and (max-width: 325px) {
         display: grid;
         grid-template-columns: 1fr;
         font-size: 10px;
-        padding-right: 50px;
-        justify-content: flex-end;
+        // height: 30em;
+        width: 300px;
+        margin-left: 10px;    
     }
 }
   
@@ -52,19 +69,10 @@
     background: #eca400;
     padding: 20px;
     font-size: 17px;
+    width: 280px;
   }
 
   
-  .grid-items p {
-    padding-top: 30px;
-    padding-bottom: 3px;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
-  }
-  .steph{
-    margin-top: 100px;
-    margin-bottom: 1000px;
-    margin-left: 300px;
-  }
+ 
 
   

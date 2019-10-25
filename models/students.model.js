@@ -4,6 +4,11 @@ const Schema = mongoose.Schema;
 
 const studentsSchema = new Schema(
     {
+        image: {
+            type: String,
+            unique: true
+        },
+
         name: {
             type: String,
             required: true,

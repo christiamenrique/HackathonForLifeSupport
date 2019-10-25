@@ -30,9 +30,6 @@ mongoose.connect(uri, { useNewUrlParser: true,
                           useCreateIndex: true, 
                           useUnifiedTopology: true})
 
-// mongoose.on('error', err => {
-//     console.log(err)
-//   });
 
 const connection = mongoose.connection;
 connection.once('open', () => {

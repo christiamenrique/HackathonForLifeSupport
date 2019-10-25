@@ -10,7 +10,7 @@ const Employee = props => (
 
     <div className="grid-items">
         <div className="img-cont">
-            <img alt="img" src="https://lifesports.org/wp-content/uploads/Coach-Rodney.jpg" height="200px" width="200px" />
+            <img alt="img" src={props.employee.image} height="200px" width="200px" />
         </div>
         <p>Name:{props.employee.name}</p>
         <p>Profession: {props.employee.profession}</p>
@@ -50,7 +50,7 @@ export default class EmployeesList extends Component {
 <div><EmployeeNav/>
 <br></br>
 
-            <div className="main-grid steph">
+            <div className="main-grid">
 
                 {this.exerciseList()}
             </div>

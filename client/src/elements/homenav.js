@@ -4,16 +4,16 @@ import React from 'react';
 
 export default function HomeNav() {
   return (
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav className="navbar navbar-expand-lg fixed-top">
       <button
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navigation-bar"
       >
-        <span class="navbar-toggler-icon">&#9776;</span>
+        <span className="navbar-toggler-icon">&#9776;</span>
       </button>
-      <a class="navbar-brand" href="/index">
+      <a className="navbar-brand" href="/">
         <img
           className="taco"
           src="https://image.flaticon.com/icons/png/128/2128/2128322.png"
@@ -21,15 +21,15 @@ export default function HomeNav() {
         />
       </a>
 
-      <div class="collapse navbar-collapse" id="navigation-bar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">
+      <div className="collapse navbar-collapse" id="navigation-bar">
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <a className="nav-link" href="/">
               HOME
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/login">
+          <li className="nav-item">
+            <a className="nav-link" href="/login">
               LOGIN
             </a>
           </li>

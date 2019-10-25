@@ -438,6 +438,7 @@ btn {
 .lead{
   font-weight: bold;
 font-family: "Cardo", serif;
+color: rgb(246, 246, 202);
 
   
 }
@@ -445,3 +446,9 @@ font-family: "Cardo", serif;
   font-family: "Cardo", serif;
 
 }
+
+.editDelete {
+  text-decoration: none;
+  color: black;
+}
+

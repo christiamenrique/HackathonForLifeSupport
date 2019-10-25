@@ -47,9 +47,9 @@ function Home() {
                           Parent
                         </a>
                       </li>
-                      <li className="nav-item badge-warning">
+                      <li className="nav-item">
                         <a
-                          className="nav-link"
+                          className="nav-link badge-warning"
                           id="pills-contact-tab"
                           data-toggle="pill"
                           href="#pills-contact"
@@ -108,7 +108,7 @@ function Home() {
 
                           <Link to="/view-student" className="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2" 
                           >
-                          Sing in
+                          Sign in
                           </Link >
 
                           <div className="text-center">
@@ -162,8 +162,8 @@ function Home() {
                             </label>
                           </div>
 
-                          <Link to="/view-employee" className="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2"
-                          > Sing in</Link>
+                          <Link to="/view-student" className="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2"
+                          > Sign in</Link>
 
                           <div className="text-center">
                             <a className="small" href="#">
@@ -217,7 +217,7 @@ function Home() {
                           </div>
 
                           <Link to="/view-employee" className="btn btn-lg btn-warning btn-block btn-login text-uppercase font-weight-bold mb-2"
-                          > Sing in</Link>
+                          > Sign in</Link>
 
                           <div className="text-center">
                             <a className="small" href="#">

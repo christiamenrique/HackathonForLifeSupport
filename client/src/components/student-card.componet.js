@@ -6,14 +6,9 @@ import EmployeeNav from "../elements/employeenav"
 
 const Student = props => (
 
-
-  
   <div className="grid-item">
     <div className="img-cont">
-      <img
-        alt="img"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_CuqQpYzDRQXJ_-4NoVbedjKioYl-7CTvYzeSDIkGRGVObVfKw&s"
-      />
+      <img alt="img" src={props.student.image} height="300px" width="300px"/>
     </div>
     <p>Name: {props.student.name}</p>
     <p>Team Name: {props.student.teamName}</p>
@@ -52,7 +47,7 @@ export default class ExercisesList extends Component {
  
     <EmployeeNav/>
     <br></br>
-    <div className="grid-container steph2">{this.exerciseList()}</div>
+    <div className="grid-container">{this.exerciseList()}</div>
     </div>
     ;
   }

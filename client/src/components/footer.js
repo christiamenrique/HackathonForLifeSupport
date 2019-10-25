@@ -39,9 +39,9 @@ export default function StickyFooter() {
   const classes = useStyles();
 
   return (
+   
     <div className={classes.root}>
       <CssBaseline />
- 
       <footer className={classes.footer}>
         <Container maxWidth="sm">
           <Typography variant="body1">My sticky footer can be found here.</Typography>
