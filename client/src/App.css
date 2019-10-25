@@ -451,4 +451,23 @@ color: rgb(246, 246, 202);
   text-decoration: none;
   color: black;
 }
-
+.log{
+  padding-top: 150px;
+  font-family: "Cardo", serif;
+    letter-spacing: 1px;
+    font-size: 4em;
+    text-shadow: -2px 2px 0px #000;
+}
+.excer{
+  max-width: 100rem;
+  background:#ECA400;
+  margin:100px auto;
+  padding: 50px 75px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow:0 0 0 20px #000000b3;
+  font-family: "Monstserrat", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}

@@ -121,7 +121,7 @@ export default class CreateStudent extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
-                <form className="form" onSubmit={this.onSubmit}>
+                <form className="form stu" onSubmit={this.onSubmit}>
                 <h3 className="employee">Create Student</h3>
                 <div className="form-group">
                         <label><strong>Student Image URL:</strong></label>

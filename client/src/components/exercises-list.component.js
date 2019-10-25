@@ -56,24 +56,11 @@ export default class ExercisesList extends Component {
 
       <div>
         <EmployeeNav />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br> 
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <h3>Logged Exercises</h3>
-        <table className="table">
+      
+       
+        
+        <h3 className="log">Logged Exercises</h3>
+        <table className="table excer">
           <thead className="thead-light">
             <tr>
               <th>Student name</th>
@@ -92,12 +79,7 @@ export default class ExercisesList extends Component {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>     </div>
+     </div>
     )
   }
 }

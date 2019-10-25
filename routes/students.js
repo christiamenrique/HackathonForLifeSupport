@@ -11,6 +11,11 @@ router.get('/', async (req, res) => {
  
 })
 
+router.get('/filter/:id', async (req, res) => {
+  const students = await Students.find({$name})
+  res.json(students)
+})
+
 // 2. add a new student
   router.post('/add', async ({body}, res) => {
       Students.create(body)

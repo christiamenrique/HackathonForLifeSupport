@@ -1,3 +1,22 @@
+.searchBar {
+  padding-top: 120px;
+  margin-left: 45%;
+  margin-right: 30%;
+}
+
+.btn-outline-success {
+  color: black;
+  border-color: white;
+}
+
+.btn-outline-success:hover {
+  background-color: #eca400;
+
+}
+
+
+
+
 .img-cont {
   margin-top: 30px;
   overflow: hidden;
@@ -21,7 +40,7 @@
   box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.15);
   text-align: center;
   cursor: pointer;
-  margin-top: 200px;
+  margin-top: 70px;
   margin-bottom: 1500px;
   margin-left: 188px;
 

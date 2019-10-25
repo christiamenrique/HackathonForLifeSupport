@@ -85,12 +85,13 @@ export default class CreateExercise extends Component {
       <div>
         <EmployeeNav />
         <br></br>
-                <br></br>
-                <br></br>  <br></br>
-                <br></br>
-                <br></br>
-        <form className="form" onSubmit={this.onSubmit}>
-        <h3 className="employee">Create New Exercise Log</h3>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <form className="form"  onSubmit={this.onSubmit}>
+          <h3 className="employee">Create New Exercise Log</h3>
           <div className="form-group">
             <label><strong>Students name:</strong></label>
             <select
@@ -142,8 +143,8 @@ export default class CreateExercise extends Component {
           </div>
         </form>
         <br></br>
-                <br></br>
-                <br></br>
+        <br></br>
+        <br></br>
       </div>
     )
   }
