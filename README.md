@@ -1,5 +1,6 @@
-# LifeSports App
+# Hackathon project
 
+* Application designed for lifeSports, a Charlotte based nonprofit that combines sports, mentorship, and academics to empower young men as leaders in their communities.
 * This application allows the client to create a student and an employee
 * Is able to record students workouts . 
 * Client is able to update one of the student workouts. 
